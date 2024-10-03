@@ -1,0 +1,28 @@
+GET http://localhost:5000/pengaduan
+
+
+###
+GET http://localhost:5000/pengaduan/2
+
+###
+POST http://localhost:5000/pengaduan
+Content-Type: application/json
+
+{
+    "nama": "ichi",
+    "lokasi": "malang",
+    "deskripsi": "halo"
+}
+
+###
+PATCH  http://localhost:5000/pengaduan/2
+Content-Type: application/json
+
+{
+    "nama": "ichi new",
+    "lokasi": "malang new",
+    "deskripsi": "halo new"
+}
+
+###
+DELETE  http://localhost:5000/pengaduan/2
